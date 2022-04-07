@@ -8,6 +8,10 @@ variable "provider_token" {
   sensitive = true
 }
 
+variable "provider_token_2" {
+  type = string
+  sensitive = true
+}
 provider "fakewebservices" {
   token = var.provider_token
 }
